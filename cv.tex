@@ -1,7 +1,14 @@
-\documentclass{article}
+\documentclass[8pt]{article}
 
+\usepackage[a4paper,
+            bindingoffset=0.2in,
+            left=0.75in,
+            right=0.75in,
+            top=0.2in,
+            bottom=1in,
+            footskip=.25in]{geometry}
 \usepackage{titlesec}
-\usepackage[margin=0.2in]{geometry}
+\usepackage{graphicx} 
 \usepackage{hyperref}
 
 \title{}
@@ -28,9 +35,21 @@
     +213 50 637 764
   \end{center}
   
-  \input{sections/education}
-  \input{sections/work}
-  \input{sections/projects}
-  \input{sections/skills}
+  \section*{Education}
+    \input{sections/education}
+
+  \section*{Employers}
+    \input{sections/work}
+
+  \section*{Projects}
+    \input{sections/projects}
+
+  \section*{Skills}
+  \begin{center}
+    \begin{math}
+      Proficient > Comfortable > Familiar > Acquainted
+    \end{math}
+  \end{center}
+    \input{sections/skills}
 
 \end{document}
