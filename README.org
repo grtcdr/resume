@@ -1,0 +1,19 @@
+* grtcdr/cv
+
+** Usage
+
+Turn it into a PDF:
+
+#+begin_src sh
+pdflatex -halt-on-error cv.tex
+#+end_src
+
+Optimize it (requires ~ghostscript~ and ~moreutils~):
+
+#+begin_src sh
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.5 -dNOPAUSE -dQUIET -dBATCH -dPrinted=false -sOutputFile=cv.min.pdf cv.pdf
+#+end_src
+
+** Copying
+
+The content of this repository is [[https://creativecommons.org/licenses/by-sa/2.0/][CC-BY-SA]].
