@@ -1,8 +1,4 @@
-* grtcdr/cv
-
-#+begin_center
-[[file:cv.min.pdf][Preview]]
-#+end_center
+* grtcdr/cv ([[file:cv.min.pdf][preview]])
 
 ** Usage
 
