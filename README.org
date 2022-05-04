@@ -1,4 +1,4 @@
-* grtcdr/cv ([[file:cv.min.pdf][preview]])
+* grtcdr/cv — [[file:cv.min.pdf][preview]]
 
 ** Usage
 
@@ -8,7 +8,7 @@ Turn it into a PDF:
 pdflatex -halt-on-error cv.tex
 #+end_src
 
-Optimize it (requires ~ghostscript~ and ~moreutils~):
+Optimize it to achieve a smaller size, install ~ghostscript~ beforehand:
 
 #+begin_src sh
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.5 -dNOPAUSE -dQUIET -dBATCH -dPrinted=false -sOutputFile=cv.min.pdf cv.pdf
