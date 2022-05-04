@@ -2,12 +2,16 @@
 
 \usepackage{titlesec}
 \usepackage[margin=0.5in]{geometry}
+\usepackage{xcolor}
 \usepackage{hyperref}
 
-\title{}
-\author{\Huge Aziz Ben Ali}
-\date{}
+% xcolor configuration
+\definecolor{hebe}{RGB}{86,99,138}
 
+% titlesec configuration
+\title{}
+\author{\Huge \color{hebe}{Aziz Ben Ali}}
+\date{}
 \titleformat{\section}
   {\normalfont\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
 
@@ -15,10 +19,15 @@
 \pagenumbering{gobble}
 \maketitle
 
+Phone: +213 50 637 764
+
+Email: \href{mailto:ba.tahaaziz@gmail.com}{ba.tahaaziz@gmail.com}
+
+Website: \url{https://grtcdr.github.io}
+
 \input{education}
-\input{jobs}
-\input{skills}
+\input{work}
 \input{projects}
-\input{contact}
+\input{skills}
 
 \end{document}
