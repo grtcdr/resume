@@ -1,4 +1,16 @@
-* grtcdr/resume
+Welcome! This repository contains my personal résumé.
+
+> Q: Why LaTeX?
+
+> A: Plain text is my jam.
+
+> Q: Why split up the sections into different files?
+
+> A: Structure. I can neither stand nor comprehend long LaTeX documents.
+
+> Q: Can I use it?
+
+> A: Yes you may.
 
 ** Usage
 
@@ -16,4 +28,4 @@ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.5 -dNOPAUSE -dQUIET -dBATCH -dPrinte
 
 ** Copying
 
-The content of this repository is [[https://creativecommons.org/licenses/by-sa/2.0/][CC-BY-SA]].
+The content of this repository is [[https://creativecommons.org/publicdomain/zero/1.0/][CC0-1.0]].
