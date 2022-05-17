@@ -1,4 +1,4 @@
-* grtcdr/cv — [[file:cv.min.pdf][preview]]
+* grtcdr/resume
 
 ** Usage
 

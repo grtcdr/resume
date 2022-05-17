@@ -1,4 +1,4 @@
-\documentclass[8pt]{article}
+\documentclass{article}
 
 \usepackage[a4paper,
             bindingoffset=0.2in,
@@ -7,9 +7,18 @@
             top=0.2in,
             bottom=1in,
             footskip=.25in]{geometry}
+\usepackage[utf8]{inputenc}
 \usepackage{titlesec}
-\usepackage{graphicx} 
-\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{color}
+
+\definecolor{li}{RGB}{73,98,171}
+
+\usepackage[colorlinks,
+            linkcolor = li,
+            urlcolor  = li,
+            citecolor = li,
+            anchorcolor = li]{hyperref}
 
 \title{}
 \author{\Huge Aziz Ben Ali}
@@ -17,9 +26,11 @@
 
 \titleformat{\section}{\normalfont\Large\bfseries}{}{0em}{}
   [\titlerule]
+\titleformat{\subsection}{\normalfont\large\bfseries}{}{0em}{}
+  [\titlerule]
 
 \urlstyle{rm}
-
+% Smaller bullet points
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \begin{document}
@@ -30,9 +41,9 @@
   \begin{center}
     \url{https://grtcdr.github.io}
     ---
-    \href{mailto:ba.tahaaziz@gmail.com}{ba.tahaaziz@gmail.com}
-    ---
     +213 50 637 764
+    ---
+    \href{mailto:ba.tahaaziz@gmail.com}{ba.tahaaziz@gmail.com}
   \end{center}
   
   \section*{Education}
@@ -45,11 +56,6 @@
     \input{sections/projects}
 
   \section*{Skills}
-  \begin{center}
-    \begin{math}
-      Proficient > Comfortable > Familiar > Acquainted
-    \end{math}
-  \end{center}
     \input{sections/skills}
 
 \end{document}
