@@ -1,16 +1,14 @@
 Welcome! This repository contains my [[https://grtcdr.github.io/data/resume.pdf][personal résumé]].
 
-> Q: Why LaTeX?
+** You might be asking...
+*** Why LaTeX?
+Plain text is my jam.
 
-> A: Plain text is my jam.
+*** Why split up the sections into different files?
+Structure. I can neither stand nor comprehend long LaTeX documents.
 
-> Q: Why split up the sections into different files?
-
-> A: Structure. I can neither stand nor comprehend long LaTeX documents.
-
-> Q: Can I use it?
-
-> A: Yes, you may.
+*** Can I use it?
+Yes, you may.
 
 ** Usage
 
