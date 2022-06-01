@@ -1,14 +1,9 @@
 \documentclass{article}
 
-\usepackage[a4paper,
-            bindingoffset=0.2in,
-            left=0.75in,
-            right=0.75in,
-            top=0.2in,
-            bottom=1in,
-            footskip=.25in]{geometry}
+\usepackage[a4paper, margin=.3in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{titlesec}
+\usepackage{titling}
 \usepackage{graphicx}
 \usepackage{color}
 
@@ -20,42 +15,83 @@
             citecolor = li,
             anchorcolor = li]{hyperref}
 
-\title{}
-\author{\Huge Aziz Ben Ali}
-\date{}
+\titleformat{\section}{\normalfont\large}{}{0em}{}
+[\titlerule]
 
-\titleformat{\section}{\normalfont\Large\bfseries}{}{0em}{}
-            [\titlerule]
-            
-\titleformat{\subsection}{\normalfont\large\bfseries}{}{0em}{}
+\titleformat{\subsection}{\normalfont\bfseries}{}{0em}{}
 
 \urlstyle{rm}
 
-\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\diamond$}}$}
 
 \begin{document}
+\pagenumbering{gobble}
 
-  \pagenumbering{gobble}
-  \maketitle
-  
-  \begin{center}
-    \url{https://grtcdr.github.io}
-    ---
-    +213 50 637 764
-    ---
-    \href{mailto:ba.tahaaziz@gmail.com}{ba.tahaaziz@gmail.com}
-  \end{center}
-  
-  \section*{Education}
-    \input{sections/education}
+\begingroup
+\raggedright
+\LARGE \bfseries Aziz Ben Ali\hfill \normalfont \large \url{grtcdr.github.io}\par
+\large \href{mailto:ba.tahaaziz@gmail.com}{ba.tahaaziz@gmail.com}\par
+\endgroup
 
-  \section*{Employers}
-    \input{sections/work}
+\section*{Education}
+\subsection*{Ecole Supérieur Privée d'Ingéniere et de Technologies \hfill \normalfont \textit{Sep. 2019 - Present}}
+Studying computer science.
 
-  \section*{Projects}
-    \input{sections/projects}
+\section*{Employers}
+\subsection*{HLi Group \normalfont --- Intern \hfill \textit{Jul. 2021 - Sep. 2021}}
+Developed and optimized internal .NET web applications.
 
-  \section*{Skills}
-    \input{sections/skills}
+\subsection*{Thermecatex \normalfont --- Intern \hfill \textit{Aug. 2018, Sep. 2018}}
+Helped develop and migrate to a new inventory system, a digitalized
+version of its predecessor.
 
+\section*{Open Source Projects}
+In my spare time, I like to give back to the open source
+community. I've also authored my own tools over the years:
+
+\subsection*{\href{https://github.com/Macchina-CLI/macchina}{macchina}}
+A cross-platform command-line system information fetcher with an
+emphasis on performance, which has recently become a popular contender
+to many well-established tools. macchina is available in numerous
+official package repositories such as pkgsrc, homebrew, scoop, termux,
+nixpkgs, etc.
+
+\subsection{\href{https://github.com/Macchina-CLI/libmacchina}{libmacchina}}
+A cross-platform library for retrieving system information, from
+uptime and battery information, to the number of packages you have
+installed.
+
+\subsection*{\href{https://git.sr.ht/~grtcdr/citron}{citron}}
+A memory-friendly tool delivering system data via on-demand
+notifications, replacing the need for the traditional taskbar.
+
+\subsection*{\href{https://git.sr.ht/~grtcdr/paspio}{paspio}}
+A small library and command-line tool to measure and report password
+entropy.
+
+\section*{Skills}
+\subsection*{Programming Languages}
+\begin{itemize}
+\item Proficient in Rust and (PL/)SQL.
+\item Comfortable with PHP and shell scripting.
+\item Acquainted with Python, Ruby and Java.
+\end{itemize}
+
+\subsection*{Tools}
+\begin{itemize}
+\item Proficient in Linux, i.e. Ubuntu and Arch. I've self-hosted an
+  internet-facing server and exposed various web applications through
+  it.
+\item Comfortable with Git, which I use to version control my
+  personal and public open source projects.
+\item Previously a Vim veteran, now an Emacs devotee.
+\item Uses PlantUML for any and all diagramming needs.
+\end{itemize}
+
+\subsection*{Documentation and markup languages}
+\begin{itemize}
+\item Proficient in Markdown.
+\item Comfortable with Org Mode and HTML.
+\item Acquainted with \LaTeX{} and Asciidoctor.
+\end{itemize}
 \end{document}
