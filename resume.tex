@@ -1,9 +1,7 @@
 \documentclass{article}
 
 \usepackage[a4paper, margin=.3in]{geometry}
-\usepackage[utf8]{inputenc}
 \usepackage{titlesec}
-\usepackage{titling}
 \usepackage{graphicx}
 \usepackage{color}
 
@@ -15,54 +13,55 @@
             citecolor = li,
             anchorcolor = li]{hyperref}
 
-\titleformat{\section}{\normalfont\large}{}{0em}{}
-[\titlerule]
-
+\titleformat{\section}{\scshape\large}{}{0em}{}[\titlerule]
 \titleformat{\subsection}{\normalfont\bfseries}{}{0em}{}
 
-\urlstyle{rm}
-
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\diamond$}}$}
+\newcommand{\position}[4]{\subsection*{#1 \normalfont \hfill \textit{#2}} #4 \hfill #3}
+\newcommand{\pro}[0]{Proficient in}
+\newcommand{\comf}[0]{Comfortable with}
+\newcommand{\acq}[0]{Acquainted with}
 
 \begin{document}
 \pagenumbering{gobble}
 
 \begingroup
 \raggedright
-\LARGE \bfseries Aziz Ben Ali\hfill \normalfont \large \href{https://grtcdr.github.io}{grtcdr.github.io}\par
-\large \href{mailto:ba.tahaaziz@gmail.com}{ba.tahaaziz@gmail.com}\par
+\LARGE{\bfseries Aziz Ben Ali}
+\hfill \large \href{https://grtcdr.github.io}{grtcdr.github.io}\par
+\vspace*{0.4em}
+\large \href{mailto:ba.tahaaziz@gmail.com}{ba.tahaaziz@gmail.com}
 \endgroup
 
 \section*{Education}
-\subsection*{Ecole Supérieur Privée d'Ingéniere et de Technologies \hfill \normalfont \textit{Sep. 2019 - Present}}
-Studying computer science.
+\position{Ecole Supérieur Privée d'Ingéniere et de
+  Technologies}{Sep. 2019 - Present}{}{Studying computer science.}
 
 \section*{Employers}
-\subsection*{HLi Group \normalfont --- Intern \hfill \textit{Jul. 2021 - Sep. 2021}}
-Developed and optimized internal .NET web applications.
+\position{HLi Group}{Jul. 2021 - Sep. 2021}{Intern} {Developed and
+  optimized internal .NET web applications.}
 
-\subsection*{Thermecatex \normalfont --- Intern \hfill \textit{Aug. 2018, Sep. 2018}}
-Helped develop and migrate to a new inventory system, a digitalized
-version of its predecessor.
+\position{Thermecatex}{Aug. 2018 - Sep. 2018}{Intern} {Helped develop
+  and migrate to a new inventory system, a digitalized version of its
+  predecessor.}
 
 \section*{Open Source Projects}
 In my spare time, I like to give back to the open source
-community. I've also authored my own tools over the years:
+community. I've also authored my own tools over the years.
 
 \subsection*{\href{https://github.com/Macchina-CLI/macchina}{macchina}}
 A cross-platform command-line system information fetcher with an
-emphasis on performance, which has recently become a popular contender
-to many well-established tools. macchina is available in numerous
-official package repositories such as pkgsrc, homebrew, scoop, termux,
-nixpkgs, etc.
+emphasis on performance. macchina is available in numerous official
+package repositories such as pkgsrc, homebrew, scoop, termux, nixpkgs,
+and more.
 
 \subsection{\href{https://github.com/Macchina-CLI/libmacchina}{libmacchina}}
-A cross-platform library for retrieving system information, from
-uptime and battery information, to the number of packages you have
-installed.
+A cross-platform library for retrieving all kinds of system
+information, powering macchina, citron as well as another command-line
+tool.
 
 \subsection*{\href{https://git.sr.ht/~grtcdr/citron}{citron}}
-A memory-friendly tool delivering system data via on-demand
+A memory-friendly tool that delivers system data via on-demand
 notifications, replacing the need for the traditional taskbar.
 
 \subsection*{\href{https://git.sr.ht/~grtcdr/paspio}{paspio}}
@@ -72,26 +71,25 @@ entropy.
 \section*{Skills}
 \subsection*{Programming Languages}
 \begin{itemize}
-\item Proficient in Rust and (PL/)SQL.
-\item Comfortable with PHP and shell scripting.
-\item Acquainted with Python, Ruby and Java.
+\item \pro{} Rust and (PL/)SQL.
+\item \comf{} PHP and shell scripting.
+\item \acq{} Python, Ruby and Java.
 \end{itemize}
 
 \subsection*{Tools}
 \begin{itemize}
-\item Proficient in Linux, i.e. Ubuntu and Arch. I've self-hosted an
+\item \pro{} Linux, i.e. Ubuntu and Arch. I've self-hosted an
   internet-facing server and exposed various web applications through
   it.
-\item Comfortable with Git, which I use to version control my
-  personal and public open source projects.
+\item \comf{} Git, which I use to version control my personal and public projects.
 \item Previously a Vim veteran, now an Emacs devotee.
 \item Uses PlantUML for any and all diagramming needs.
 \end{itemize}
 
 \subsection*{Documentation and markup languages}
 \begin{itemize}
-\item Proficient in Markdown.
-\item Comfortable with Org Mode and HTML.
-\item Acquainted with \LaTeX{} and Asciidoctor.
+\item \pro{} Markdown.
+\item \comf{} Org Mode and HTML.
+\item \acq{} \LaTeX{} and Asciidoctor.
 \end{itemize}
 \end{document}
