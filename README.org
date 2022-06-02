@@ -21,7 +21,7 @@ satisfy all of your needs.
 Turn it into a PDF:
 
 #+begin_src sh
-pdflatex -halt-on-error cv.tex
+pdflatex -halt-on-error resume.tex
 #+end_src
 
 An optional step is to optimize it to achieve a smaller size, install ~ghostscript~ beforehand:
