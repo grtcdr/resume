@@ -2,23 +2,21 @@ Bienvenue!
 
 This repository contains my short and sweet [[https://grtcdr.github.io/data/resume.pdf][résumé]].
 
-** Why LaTeX?
+* Why LaTeX?
 
 [[https://en.wikipedia.org/wiki/Reproducibility][Reproducible]] documentation is invaluable.
 
 The benefit that LaTeX brings over any other writing environment is
 freedom [1], reproducibility [2] and control [3].
 
-[1] LaTeX is plain text. You can edit it locally, offline and use
+1. LaTeX is plain text. You can edit it locally, offline and use
 whichever text editor you are comfortable with.
-
-[2] LaTeX is used by tens of thousands of researchers to create and
+2. LaTeX is used by tens of thousands of researchers to create and
 share reproducible research.
-
-[3] LaTeX, and its accompanying ecosystem of packages is enough to
+3. LaTeX, and its accompanying ecosystem of packages is enough to
 satisfy all of your needs.
 
-** Usage
+* Usage
 
 Turn it into a PDF:
 
@@ -32,6 +30,10 @@ An optional step is to optimize it to achieve a smaller size, install ~ghostscri
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.5 -dNOPAUSE -dQUIET -dBATCH -dPrinted=false -sOutputFile=resume.min.pdf resume.pdf
 #+end_src
 
-** Copying
+* Inspirations
+
+The layout and design is inspired by [[https://zyedidia.github.io/about/yedidia_cv.pdf][Zachary Yedidia's CV]].
+
+* Copying
 
 The content of this repository is [[https://creativecommons.org/publicdomain/zero/1.0/][CC0-1.0]].
