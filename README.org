@@ -9,12 +9,9 @@ This repository contains my short and sweet [[https://grtcdr.github.io/data/resu
 The benefit that LaTeX brings over any other writing environment is
 freedom [1], reproducibility [2] and control [3].
 
-1. LaTeX is plain text. You can edit it locally, offline and use
-whichever text editor you are comfortable with.
-2. LaTeX is used by tens of thousands of researchers to create and
-share reproducible research.
-3. LaTeX, and its accompanying ecosystem of packages is enough to
-satisfy all of your needs.
+1. LaTeX is plain text. You can edit it locally, offline and use whichever text editor you are comfortable with.
+2. LaTeX is used by tens of thousands of researchers to create and share reproducible research.
+3. LaTeX, and its accompanying ecosystem of packages is enough to satisfy all of your needs.
 
 * Usage
 
