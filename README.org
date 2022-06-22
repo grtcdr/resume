@@ -33,4 +33,6 @@ The layout and design is inspired by [[https://zyedidia.github.io/about/yedidia_
 
 * Copying
 
+[[https://i.creativecommons.org/p/zero/1.0/88x31.png]]
+
 The content of this repository is [[https://creativecommons.org/publicdomain/zero/1.0/][CC0-1.0]].
