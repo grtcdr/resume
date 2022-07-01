@@ -1,23 +1,30 @@
 \documentclass{article}
 
+%%% Packages:
 \usepackage[a4paper, margin=.3in]{geometry}
 \usepackage{titlesec}
 \usepackage{graphicx}
 \usepackage{color}
 
+% This is the color used by hyperlinks
 \definecolor{li}{RGB}{73,98,171}
-
 \usepackage[colorlinks,
             linkcolor = li,
             urlcolor  = li,
             citecolor = li,
             anchorcolor = li]{hyperref}
 
+% Defines the format of the headers: sections
+% use a ruler, while subsections do not.
 \titleformat{\section}{\scshape\large}{}{0em}{}[\titlerule]
 \titleformat{\subsection}{\normalfont\bfseries}{}{0em}{}
 
+%%% Macros:
+% Make bulletpoints use a diamond shape
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\diamond$}}$}
+% A macro that takes care of the styling of a job position
 \newcommand{\position}[4]{\subsection*{#1 \normalfont \hfill \textit{#2}} #4 \hfill #3}
+% A macro that defines how knowledgeable one is in a particular topic
 \newcommand{\pro}[0]{Proficient in}
 \newcommand{\comf}[0]{Comfortable with}
 \newcommand{\acq}[0]{Acquainted with}
@@ -33,37 +40,44 @@
 \endgroup
 
 \section*{Education}
+
 \position{École Supérieur Privée d'Ingénierie et de
-  Technologies}{Sep. 2019 - Present}{Tunis}{Studying computer science.}
+Technologies}{Sep. 2019 - Present}{Tunis}{Studying computer science.}
 
 \section*{Employers}
+
 \position{HLi Group}{Jul. 2021 - Sep. 2021}{Intern} {Developed and
-  optimized internal .NET web applications.}
+optimized internal .NET web applications.}
 
 \position{Thermecatex}{Aug. 2018 - Sep. 2018}{Intern} {Helped develop
-  and migrate to a new inventory system, a digitalized version of its
-  predecessor.}
+and migrate to a new inventory system, a digitalized version of its
+predecessor.}
 
 \section*{Open Source Projects}
+
 In my spare time, I like to give back to the open source
 community. I've also authored my own tools over the years.
 
 \subsection*{\href{https://github.com/Macchina-CLI/macchina}{macchina}}
+
 A cross-platform command-line system information fetcher with an
 emphasis on performance. macchina is available in numerous official
 package repositories such as pkgsrc, homebrew, scoop, termux, nixpkgs,
 and more.
 
 \subsection{\href{https://github.com/Macchina-CLI/libmacchina}{libmacchina}}
+
 A cross-platform library for retrieving all kinds of system
 information, powering macchina, citron as well as another command-line
 tool.
 
 \subsection*{\href{https://git.sr.ht/~grtcdr/citron}{citron}}
+
 A memory-friendly tool that delivers system data via on-demand
 notifications, replacing the need for the traditional taskbar.
 
 \subsection*{\href{https://git.sr.ht/~grtcdr/paspio}{paspio}}
+
 A small library and command-line tool to measure and report password
 entropy.
 
@@ -78,8 +92,8 @@ entropy.
 \subsection*{Tools}
 \begin{itemize}
 \item \pro{} Linux, i.e. Ubuntu and Arch. I've self-hosted an
-  internet-facing server and exposed various web applications through
-  it.
+internet-facing server and exposed various web applications through
+it.
 \item \comf{} Git, which I use to version control my personal and public projects.
 \item Previously a Vim veteran, now an Emacs devotee.
 \item Uses PlantUML for any and all diagramming needs.
